@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>My Personalized Greeting</title>
+</head>
+<body class="h-screen font-sans flex items-center justify-center text-white bg-slate-600 bg-no-repeat bg-cover" style="background-image: url(./src/image/cool-bg2.jpg)">
+   <div class="text-center">
+        <p class="text-2xl p-6">Hey there!, You're Welcome.</p>
+        <div id="greeting">
+            <!-- The greeting will be filled in by the JavaScript code -->
+        </div>
+
+        <form action="post" id="name">
+            <label for="name">Enter Your Prefered Name: </label>
+            <input type="text" id="name" placeholder="Type here......" required> <br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <button id="clear-button">Clear Name</button>
+   </div>
+
+
+
+   <script src="./src/main.js"></script>
+</body>
+</html>
