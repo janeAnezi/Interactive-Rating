@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
     <title>My Personalized Greeting</title>
 </head>
-<body class="h-screen font-sans flex items-center justify-center text-white bg-slate-600 bg-no-repeat bg-cover" style="background-image: url(./src/image/cool-bg2.jpg)">
+<body class="h-screen font-mono flex items-center justify-center text-white bg-slate-600 bg-no-repeat bg-cover" style="background-image: url(./src/image/cool-bg2.jpg)">
    <div class="text-center">
         <p class="text-2xl p-6">Hey there!, You're Welcome.</p>
         <div id="greeting">
@@ -14,12 +14,12 @@
         </div>
 
         <form action="post" id="name">
-            <label for="nam">Enter Your Preferred Name:  </label><br><br>
-            <input class="text-sm" type="text" id="name" placeholder="Type here......" required> <br>
-            <button type="submit">Submit</button>
+            <label for="name">Enter Your Preferred Name:  </label>
+            <input class="text-sm p-2 rounded-lg placeholder-blue-300 bg-transparent border-solid hover:border-dotted border-2 border-indigo-200" type="text" id="name" placeholder="Type here......" required> <br>
+            <button class="p-2 mt-2 text-white hover:text-green-400 " type="submit">Submit</button>
         </form>
 
-        <button  class="button" id="clear-button">Clear Name</button>
+        <button  class="button hover:text-red-700" id="clear-button">Clear Name</button>
    </div>
 
 
