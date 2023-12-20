@@ -1,6 +1,7 @@
 const nameForm = document.getElementById('Name-form');
 const greeting = document.getElementById('greeting');
 const clearName = document.getElementById('clear-button');
+const nameInput = document.getElementById('name');
 
 document.addEventListener('DOMContentLoaded', function () {
     // Check if the name is already stored in local storage
@@ -27,7 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
       //displayGreeting(); // Display a generic greeting after clearing the name
         nameForm.style.display = "block";
         greeting.innerHTML = "";
-        nam
+
+        // Clear the input field
+        nameInput.value = '';
+    
     });
 
    
