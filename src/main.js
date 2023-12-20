@@ -5,13 +5,13 @@ const nameInput = document.getElementById('name');
 
 document.addEventListener('DOMContentLoaded', function () {
     // Check if the name is already stored in local storage
-    const storedName = localStorage.getItem('userName');
+    // const storedName = localStorage.getItem('userName');
   
-    if (storedName) {
-      displayGreeting(storedName);
-    } else {
-      displayGreeting(); // Display a generic greeting
-    }
+    // if (storedName) {
+    //   displayGreeting(storedName);
+    // } else {
+    //   displayGreeting(); // Display a generic greeting
+    // }
   
     // Form submission event
     nameForm.addEventListener('submit', function (event) {
